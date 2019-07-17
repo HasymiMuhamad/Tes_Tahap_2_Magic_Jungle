@@ -26,7 +26,7 @@ var itemsSchema = new items({
   timestamps:true
 });
 
-subjectSchema
+itemsSchema
   .plugin(validate)
   .plugin(autopopulate);
 module.exports = mongoose.model('items',itemsSchema);
